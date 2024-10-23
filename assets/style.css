@@ -1,0 +1,114 @@
+   
+body {
+    background-color: rgb(141, 225, 242);
+}
+.btn-custom {
+    background-color: #00aeff; 
+    color: white; 
+    border: none; 
+    padding: 5px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 80%; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+
+.navbar-brand {
+    font-family: 'Bebas Neue';
+    
+}
+
+.Hero-Section {
+    background-image: url("./imgs/perfil_profesional.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    color: black;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap; 
+    
+    gap: 10px; 
+}
+.imagen {
+    flex: 1 1 calc(33.333% - 10px); 
+    max-width: calc(33.333% - 10px); 
+    box-sizing: border-box; 
+}
+img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    .imagen {
+        flex: 1 1 calc(50% - 10px); 
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .imagen {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.rectangulo {
+    background-color: white;
+    max-width: 100%;
+}
+
+.section {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    position: relative;
+    padding: 20px 0;
+}
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    background: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.timeline-item h5 {
+    margin: 0;
+}
+.badge {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .timeline {
+        grid-template-columns: 1fr 1fr; 
+        padding: 40px; 
+    }
+    .timeline-item {
+        margin: 0; 
+    }
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    
+}
